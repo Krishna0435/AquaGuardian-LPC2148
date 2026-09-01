@@ -210,11 +210,11 @@ This project provided practical experience in:
 
 ### Hardware Setup
 
-![AquaGuardian Hardware Setup](images/hardware_setup.jpg)
+![AquaGuardian Hardware Setup](images/hardware_setup.jpeg)
 
 ### Development Setup
 
-![AquaGuardian Development Setup](images/development_setup.jpg)
+![AquaGuardian Development Setup](images/development_setup.jpeg)
 
 ## Author :
 
