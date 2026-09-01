@@ -105,12 +105,13 @@ Project Flow :
          /            \ 
       Yes             No 
        ↓              ↓ 
-Increase Count    Track Missed 
+Increase Count     Track Missed 
  │                  Reminder 
  ↓ 
 Update Progress 
     │ 
     └──────────────→ Continue
+
 
 
 Configuration Menu :
