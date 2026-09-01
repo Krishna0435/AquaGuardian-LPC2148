@@ -80,7 +80,7 @@ Project Flow :
 
 
                   ┌──────────────────┐ 
-                  │ System Start     │
+                  │   System Start   │
                   └────────┬─────────┘ 
                            ↓
                   Initialize Peripherals 
@@ -101,16 +101,16 @@ Project Flow :
             Buzzer + LED               Continue Monitoring 
                  │ 
                  ↓
-         Drink Button? 
-         /            \ 
-      Yes             No 
-       ↓              ↓ 
-Increase Count     Track Missed 
- │                  Reminder 
- ↓ 
-Update Progress 
-    │ 
-    └──────────────→ Continue
+               Drink Button? 
+               /            \ 
+            Yes             No 
+             ↓              ↓ 
+      Increase Count     Track Missed 
+          │                  Reminder 
+          ↓ 
+      Update Progress 
+          │ 
+          └──────────────→ Continue
 
 
 
