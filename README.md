@@ -1,4 +1,4 @@
-##AquaGuardian – Smart Hydration Reminder System
+## AquaGuardian – Smart Hydration Reminder System
 
 An embedded systems project developed using the LPC2148 ARM7 microcontroller to monitor daily water intake and provide automatic hydration reminders.
 
