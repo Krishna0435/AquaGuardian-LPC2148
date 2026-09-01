@@ -1,13 +1,13 @@
-## AquaGuardian – Smart Hydration Reminder System
+# AquaGuardian – Smart Hydration Reminder System
 
 An embedded systems project developed using the LPC2148 ARM7 microcontroller to monitor daily water intake and provide automatic hydration reminders.
 
-Overview :
+## Overview :
 
 AquaGuardian is a smart hydration reminder system designed to help users maintain their daily water intake.
 The system tracks the amount of water consumed, displays hydration progress on a 16×2 LCD, provides reminders using a buzzer and LEDs, and allows the user to configure hydration goals and reminder settings using a 4×4 keypad.
 
-Features :
+## Features :
 
 * Daily water intake tracking
 * Configurable daily hydration goal
@@ -23,7 +23,7 @@ Features :
 * External interrupt for entering configuration mode
 * Daily reset functionality
 
-Hardware
+## Hardware
 
 * Microcontroller: LPC2148 (ARM7)
 * LCD: 16×2 character LCD
@@ -33,7 +33,7 @@ Hardware
 * Red, Yellow and Green LEDs
 * Push button for water intake detection
 
-Pin Configuration
+## Pin Configuration
 
 | Peripheral     | LPC2148 Pin   |
 | -------------- | ------------- |
@@ -47,7 +47,7 @@ Pin Configuration
 | Keypad Columns | P1.20 – P1.23 |
 |LCD             | P0.8 -  P0.18 |
 
- Software Modules :The project follows a modular embedded-C design, with separate drivers for each peripheral.
+ ### Software Modules :The project follows a modular embedded-C design, with separate drivers for each peripheral.
    
       main.c
       │
@@ -76,7 +76,7 @@ Pin Configuration
              └── Software delay functions
 
 
-System Operation
+### System Operation
 1. The system initializes the LPC2148 peripherals.
 2. The RTC provides the current time and date.
 3. The LCD displays hydration-related information.
@@ -86,7 +86,7 @@ System Operation
 7. Hydration progress is continuously monitored.
 8. The external interrupt provides access to the configuration mode
 
-Configuration Menu :
+### Configuration Menu :
 
 The external interrupt enters configuration mode.
 The keypad provides the following options:
@@ -96,7 +96,7 @@ The keypad provides the following options:
 C → Exit configuration mode
    
       
-Project Flow :
+### Project Flow :
 
 
                   ┌──────────────────┐ 
@@ -154,7 +154,7 @@ Development Environment :
  -> Keil µVision
  -> Proteus simulation
 
- Project Structure :
+ ## Project Structure :
 
       AquaGuardian
       │
@@ -191,7 +191,7 @@ Development Environment :
       │
       └── README.md
 
-Learning Outcomes :
+## Learning Outcomes :
 
 This project provided practical experience in:
 
@@ -206,7 +206,7 @@ This project provided practical experience in:
 * Modular driver-based software design
 * Embedded application design
 
-Author :
+## Author :
 
 Murali Krishna
 
