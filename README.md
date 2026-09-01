@@ -49,32 +49,32 @@ Pin Configuration
 |LCD             | P0.8 -  P0.18 |
 
 
-Software Modules :
-main.c
-   │
-   ├── hydration.c/h
-   │      └── Hydration and reminder management
-   │
-   ├── rtc.c/h
-   │      └── Real-Time Clock
-   │
-   ├── lcd.c/h
-   │      └── 16×2 LCD interface
-   │
-   ├── kpm.c/h
-   │      └── 4×4 keypad interface
-   │
-   ├── led.c/h
-   │      └── LED control
-   │
-   ├── buzzer.c/h
-   │      └── Buzzer control
-   │
-   ├── interrupt.c/h
-   │      └── External interrupt handling
-   │
-   └── delay.c/h
-          └── Software delay functions
+      Software Modules :
+      main.c
+      │
+      ├── hydration.c/h
+      │      └── Hydration and reminder management
+      │
+      ├── rtc.c/h
+      │      └── Real-Time Clock
+      │
+      ├── lcd.c/h
+      │      └── 16×2 LCD interface
+      │
+      ├── kpm.c/h
+      │      └── 4×4 keypad interface
+      │
+      ├── led.c/h
+      │      └── LED control
+      │
+      ├── buzzer.c/h
+      │      └── Buzzer control
+      │
+      ├── interrupt.c/h
+      │      └── External interrupt handling
+      │
+      └── delay.c/h
+             └── Software delay functions
 
 Project Flow :
 
@@ -145,41 +145,40 @@ The project can be developed and tested using an ARM7/LPC2148-compatible toolcha
 
  Project Structure :
 
-
-AquaGuardian/
-│
-├── main.c
-│
-├── hydration.c
-├── hydration.h
-│
-├── rtc.c
-├── rtc.h
-│
-├── lcd.c
-├── lcd.h
-├── lcd_defines.h
-│
-├── kpm.c
-├── kpm.h
-├── kpm_defines.h
-│
-├── led.c
-├── led.h
-│
-├── buzzer.c
-├── buzzer.h
-│
-├── interrupt.c
-├── interrupt.h
-│
-├── delay.c
-├── delay.h
-│
-├── defines.h
-├── types.h
-│
-└── README.md
+      AquaGuardian
+      │
+      ├── main.c
+      │
+      ├── hydration.c
+      ├── hydration.h
+      │
+      ├── rtc.c
+      ├── rtc.h
+      │
+      ├── lcd.c
+      ├── lcd.h
+      ├── lcd_defines.h
+      │
+      ├── kpm.c
+      ├── kpm.h
+      ├── kpm_defines.h
+      │
+      ├── led.c
+      ├── led.h
+      │
+      ├── buzzer.c
+      ├── buzzer.h
+      │
+      ├── interrupt.c
+      ├── interrupt.h
+      │
+      ├── delay.c
+      ├── delay.h
+      │
+      ├── defines.h
+      ├── types.h
+      │
+      └── README.md
 
 Learning Outcomes :
 
