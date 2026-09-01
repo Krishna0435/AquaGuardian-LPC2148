@@ -206,6 +206,16 @@ This project provided practical experience in:
 * Modular driver-based software design
 * Embedded application design
 
+## Project Images
+
+### Hardware Setup
+
+![AquaGuardian Hardware Setup](images/hardware_setup.jpg)
+
+### Development Setup
+
+![AquaGuardian Development Setup](images/development_setup.jpg)
+
 ## Author :
 
 Murali Krishna
