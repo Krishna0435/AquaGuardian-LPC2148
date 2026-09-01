@@ -79,37 +79,38 @@ main.c
 Project Flow :
 
 
-                ┌──────────────────┐
-                │   System Start   │
-                |────┬─────────┘
-                         ↓
-                Initialize Peripherals
-                         ↓
-              ┌──────────────────────┐
-              │   Display RTC Status │
-              │  & Hydration Status  │
-              └──────────┬───────────┘
-                         ↓
-                 Check Reminder Time
-                         ↓
-              ┌──────────┴───────────┐
-              │                      │
-          Reminder Due            No Reminder
-              │                      │
-              ↓                      ↓
-       Buzzer + LED            Continue Monitoring
-              │
-              ↓
-        Drink Button?
-          /        \
-        Yes         No
-        ↓            ↓
- Increase Count   Track Missed
-        │          Reminder
-        ↓
- Update Progress
-        │
-        └──────────────→ Continue
+                  ┌──────────────────┐ 
+                  │ System Start     │
+                  └────────┬─────────┘ 
+                           ↓
+                  Initialize Peripherals 
+                           ↓ 
+                 ┌──────────────────────┐ 
+                 │ Display RTC Status   │ 
+                 │ & Hydration Status   │
+                 └──────────┬───────────┘ 
+                            ↓
+                     Check Reminder Time 
+                            ↓ 
+                 ┌──────────┴───────────┐ 
+                 │                      │
+                 │                      │
+            Reminder Due                 No Reminder 
+                 │                               │ 
+                 ↓                               ↓
+            Buzzer + LED               Continue Monitoring 
+                 │ 
+                 ↓
+         Drink Button? 
+         /            \ 
+      Yes             No 
+       ↓              ↓ 
+Increase Count    Track Missed 
+ │                  Reminder 
+ ↓ 
+Update Progress 
+    │ 
+    └──────────────→ Continue
 
 
 Configuration Menu :
