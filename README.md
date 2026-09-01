@@ -5,7 +5,6 @@ An embedded systems project developed using the LPC2148 ARM7 microcontroller to 
 Overview :
 
 AquaGuardian is a smart hydration reminder system designed to help users maintain their daily water intake.
-
 The system tracks the amount of water consumed, displays hydration progress on a 16×2 LCD, provides reminders using a buzzer and LEDs, and allows the user to configure hydration goals and reminder settings using a 4×4 keypad.
 
 Features :
@@ -48,8 +47,8 @@ Pin Configuration
 | Keypad Columns | P1.20 – P1.23 |
 |LCD             | P0.8 -  P0.18 |
 
-
-      Software Modules :
+ Software Modules :The project follows a modular embedded-C design, with separate drivers for each peripheral.
+   
       main.c
       │
       ├── hydration.c/h
@@ -76,6 +75,27 @@ Pin Configuration
       └── delay.c/h
              └── Software delay functions
 
+
+System Operation
+1. The system initializes the LPC2148 peripherals.
+2. The RTC provides the current time and date.
+3. The LCD displays hydration-related information.
+4. The user can configure hydration settings using the keypad.
+5. When the configured reminder interval is reached, the system activates the buzzer and LED indicators.
+6. Pressing the water-intake button updates the consumed-water count.
+7. Hydration progress is continuously monitored.
+8. The external interrupt provides access to the configuration mode
+
+Configuration Menu :
+
+The external interrupt enters configuration mode.
+The keypad provides the following options:
+1 → Set daily hydration goal
+2 → Configure RTC
+3 → Configure reminder interval
+C → Exit configuration mode
+   
+      
 Project Flow :
 
 
@@ -114,18 +134,6 @@ Project Flow :
 
 
 
-Configuration Menu :
-
-The external interrupt enters configuration mode.
-
-The keypad provides the following options:
-
-
-1 → Set daily hydration goal
-2 → Configure RTC
-3 → Configure reminder interval
-C → Exit configuration mode
-
 Technologies Used :
 
 * Embedded C
@@ -141,7 +149,10 @@ Technologies Used :
 
 Development Environment :
 
-The project can be developed and tested using an ARM7/LPC2148-compatible toolchain and simulator/hardware environment.
+ -> ARM7 / LPC2148 development environment
+ -> Embedded C
+ -> Keil µVision
+ -> Proteus simulation
 
  Project Structure :
 
@@ -193,7 +204,7 @@ This project provided practical experience in:
 * Matrix keypad interfacing
 * Buzzer and LED control
 * Modular driver-based software design
-* State-based application logic
+* Embedded application design
 
 Author :
 
