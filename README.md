@@ -134,7 +134,7 @@ C → Exit configuration mode
 
 
 
-Technologies Used :
+### Technologies Used :
 
 * Embedded C
 * ARM7 / LPC2148
@@ -147,7 +147,7 @@ Technologies Used :
 * LED indicators
 * Modular Embedded-C Programming
 
-Development Environment :
+### Development Environment :
 
  -> ARM7 / LPC2148 development environment
  -> Embedded C
