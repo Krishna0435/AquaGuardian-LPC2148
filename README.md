@@ -115,10 +115,10 @@ C → Exit configuration mode
                  ┌──────────┴───────────┐ 
                  │                      │
                  │                      │
-            Reminder Due                 No Reminder 
-                 │                               │ 
-                 ↓                               ↓
-            Buzzer + LED               Continue Monitoring 
+            Reminder Due             No Reminder 
+                 │                      │ 
+                 ↓                      ↓
+            Buzzer + LED           Continue Monitoring 
                  │ 
                  ↓
                Drink Button? 
