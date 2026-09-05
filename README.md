@@ -47,7 +47,7 @@ The system tracks the amount of water consumed, displays hydration progress on a
 | Keypad Columns | P1.20 – P1.23 |
 |LCD             | P0.8 -  P0.18 |
 
-
+![AquaGuardian Block Diagram](images/block_diagram1.png)
 
  ### Software Modules :The project follows a modular embedded-C design, with separate drivers for each peripheral.
    
